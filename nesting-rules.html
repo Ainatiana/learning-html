@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>
+        Nesting rules
+      </title>
+      <style>
+        a { text-decoration: none; }
+      </style>
+    </head>
+    <body>
+      <header>
+      <h1>
+         The nesting rule 
+      </h1>      
+      </header>
+      <main>
+        <section>
+          <h2>
+            How do we nest HTML5 elements inside others?
+         </h2>
+         <p>
+            Nesting means put one or more elements inside other elements. We define those elements as child or children element and parent elements. Some elements can' t be children of some elements so pay attention.
+         </p>
+        </section>
+        <section>
+            <p>
+                <mark><code><b>Do not do this:</b></code></mark>
+            </p>
+            <small>
+              <textarea cols="20" rows="1"><small><p></p></small></textarea>
+            </small>
+            <p>
+              Those are example of <code>error</code> because you cannot have the element <textarea cols="1" rows="1"><p></textarea> as a child of the element<textarea cols="6" rows="1"><small></textarea>.
+            </p>
+            <p>
+              <mark><code><b>Do this instead:</b></code></mark>
+            </p>
+            <small>
+              <textarea cols="16" rows="1"><small></small></textarea><br>
+              <textarea cols="5" rows="1"><p></p></textarea>
+            </small>
+            <p>
+                You need to make them written individually as in the example above.
+            </p>
+        </section>
+      </main>
+      <footer>
+        <h3><a href="list-of-html-rules.html">Go back to the list of all rules</a></h3>
+      </footer>
+    </body>
+  </html>
+
+
