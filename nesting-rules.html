@@ -19,28 +19,27 @@
       <main>
         <section>
           <h2>
-            How do we nest HTML5 elements inside others?
+            How do we nest element inside another element?
          </h2>
          <p>
-            Nesting means put one or more elements inside other elements. We define those elements as child or children element and parent elements. Some elements can' t be children of some elements so pay attention.
+            Nesting means put one or more elements inside other elements. We define those elements as child or children element and parent elements. Some elements can' t be children of some elements so pay attention.These examples below will let you know more about the nesting rule:
          </p>
         </section>
         <section>
             <p>
-                <mark><code><b>Do not do this:</b></code></mark>
+                <mark><code><b>You cannot do this:</b></code></mark>
             </p>
             <small>
-              <textarea cols="20" rows="1"><small><p></p></small></textarea>
+              <mark>&lt;p&gt;&lt;h2&gt;This one is rubbish&lt;/h2&gt;&lt;/p&gt;</mark> or <mark>&lt;h2&gt;&lt;p&gt;This one is rubbish too&lt;/p&gt;&lt;/h2&gt;</mark>
             </small>
             <p>
-              Those are example of <code>error</code> because you cannot have the element <textarea cols="1" rows="1"><p></textarea> as a child of the element<textarea cols="6" rows="1"><small></textarea>.
+              Those are example of <code>error</code> because You cannot have the &lt;h&gt; element as a child of the &lt;p&gt; element nor &lt;p&gt; element as a child of the &lt;h&gt; element. 
             </p>
             <p>
               <mark><code><b>Do this instead:</b></code></mark>
             </p>
             <small>
-              <textarea cols="16" rows="1"><small></small></textarea><br>
-              <textarea cols="5" rows="1"><p></p></textarea>
+              <mark>&lt;section&gt;&lt;p&gt;This is perfect&lt;/p&gt;&lt;/section&gt;</mark>
             </small>
             <p>
                 You need to make them written individually as in the example above.
@@ -48,7 +47,7 @@
         </section>
       </main>
       <footer>
-        <h3><a href="list-of-html-rules.html">Go back to the list of all rules</a></h3>
+        <b><a href="list-of-html-rules.html">Go back to the list of all rules</a></b>
       </footer>
     </body>
   </html>
